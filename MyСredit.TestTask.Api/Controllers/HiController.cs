@@ -9,7 +9,7 @@ using System.Web.Http;
 
 namespace MyСredit.TestTask.Api.Controllers
 {
-    public class HiController : System.Web.Http.ApiController
+    public class HiController : ApiController
     {
         private readonly IGreeter helloService;
 

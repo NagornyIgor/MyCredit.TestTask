@@ -19,12 +19,6 @@ namespace MyСredit.TestTask.Api
                 routeTemplate: "{controller}/{action}",
                 defaults: new { action = RouteParameter.Optional }
             );
-
-            //config.Routes.MapHttpRoute(
-            //    name: "DefaultApi",
-            //    routeTemplate: "api/{controller}/{id}",
-            //    defaults: new { id = RouteParameter.Optional }
-            //);
         }
     }
 }
