@@ -5,6 +5,8 @@ VisualStudioVersion = 15.0.27130.2010
 MinimumVisualStudioVersion = 10.0.40219.1
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "MyСredit.TestTask.Api", "MyСredit.TestTask.Api\MyСredit.TestTask.Api.csproj", "{4CF8A481-5C08-4E00-9CE3-11A93C6FE100}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "MyCredit.TestTask.Services", "MyCredit.TestTask.Services\MyCredit.TestTask.Services.csproj", "{B8922CF9-5BB2-47BE-A21F-6302C5B02710}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -15,6 +17,10 @@ Global
 		{4CF8A481-5C08-4E00-9CE3-11A93C6FE100}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{4CF8A481-5C08-4E00-9CE3-11A93C6FE100}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{4CF8A481-5C08-4E00-9CE3-11A93C6FE100}.Release|Any CPU.Build.0 = Release|Any CPU
+		{B8922CF9-5BB2-47BE-A21F-6302C5B02710}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{B8922CF9-5BB2-47BE-A21F-6302C5B02710}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{B8922CF9-5BB2-47BE-A21F-6302C5B02710}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{B8922CF9-5BB2-47BE-A21F-6302C5B02710}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
