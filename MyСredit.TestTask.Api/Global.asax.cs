@@ -1,4 +1,5 @@
-﻿using System;
+﻿using MyСredit.TestTask.Api.App_Start;
+using System;
 using System.Collections.Generic;
 using System.Linq;
 using System.Web;
@@ -14,6 +15,7 @@ namespace MyСredit.TestTask.Api
         protected void Application_Start()
         {
             GlobalConfiguration.Configure(WebApiConfig.Register);
+            SimpleInjectorWebApiInitializer.Initialize();
         }
     }
 }

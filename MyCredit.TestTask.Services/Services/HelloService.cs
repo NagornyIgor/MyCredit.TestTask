@@ -7,7 +7,7 @@ using System.Threading.Tasks;
 
 namespace MyCredit.TestTask.Services.Services
 {
-    public class HeloService : IGreeter
+    public class HelloService : IGreeter
     {
         public string SayHello()
         {
