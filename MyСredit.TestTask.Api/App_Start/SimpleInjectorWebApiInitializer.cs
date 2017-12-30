@@ -8,6 +8,7 @@ using SimpleInjector.Lifestyles;
 using System.Web.Http;
 using MyCredit.TestTask.Services.Interfaces;
 using MyCredit.TestTask.Services.Services;
+using MyСredit.TestTask.Api.Controllers;
 
 namespace MyСredit.TestTask.Api.App_Start
 {
@@ -27,8 +28,10 @@ namespace MyСredit.TestTask.Api.App_Start
             container.RegisterWebApiControllers(GlobalConfiguration.Configuration);
 
             //Register services
-            container.Register<IGreeter, HelloService>(Lifestyle.Scoped);
-            container.Register<IGreeter, HelloAllService>(Lifestyle.Scoped);
+            container.RegisterConditional<IGreeter, HelloAllService>(
+                c => c.Consumer.ImplementationType == typeof(HelloController));
+            container.RegisterConditional<IGreeter, HelloService>(
+                c => c.Consumer.ImplementationType == typeof(HiController));
 
             container.Verify();
 
