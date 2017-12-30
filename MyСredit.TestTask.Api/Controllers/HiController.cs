@@ -11,17 +11,17 @@ namespace MyСredit.TestTask.Api.Controllers
 {
     public class HiController : ApiController
     {
-        private readonly IGreeter helloService;
+        private readonly IGreeter greeter;
 
-        public HiController(IGreeter helloService)
+        public HiController(IGreeter greeter)
         {
-            this.helloService = helloService;
+            this.greeter = greeter;
         }
 
         [HttpGet]
-        public string Hi()
+        public string Get()
         {
-            return helloService.SayHello();
+            return greeter.SayHello();
         }
     }
 }

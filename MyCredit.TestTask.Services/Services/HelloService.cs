@@ -11,7 +11,7 @@ namespace MyCredit.TestTask.Services.Services
     {
         public string SayHello()
         {
-            return "Hi there!";
+            return "Hi everyone!";
         }
     }
 }

@@ -28,9 +28,9 @@ namespace MyСredit.TestTask.Api.App_Start
             container.RegisterWebApiControllers(GlobalConfiguration.Configuration);
 
             //Register services
-            container.RegisterConditional<IGreeter, HelloAllService>(
-                c => c.Consumer.ImplementationType == typeof(HelloController));
             container.RegisterConditional<IGreeter, HelloService>(
+                c => c.Consumer.ImplementationType == typeof(HelloController));
+            container.RegisterConditional<IGreeter, HiService>(
                 c => c.Consumer.ImplementationType == typeof(HiController));
 
             container.Verify();

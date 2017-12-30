@@ -42,8 +42,8 @@
   <ItemGroup>
     <Compile Include="Interfaces\IGreeter.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
-    <Compile Include="Services\HelloAllService.cs" />
     <Compile Include="Services\HelloService.cs" />
+    <Compile Include="Services\HiService.cs" />
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
 </Project>
